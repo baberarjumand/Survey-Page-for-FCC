@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <meta name="description" content="Survey Form">
+        <meta name="Baber Arjumand" content="Survey form project for freeCodeCamp">
+        <!-- You can add as many meta tags as you want -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>   
+
+    <body>        
+        <header >
+            <h1 id="title">Survey Form</h1>                    
+        </header>
+
+        <main>
+            <p id="description">Let us know how we can improve freeCodeCamp</p>
+            <form action="" id="survey-form">
+                <div class="input-row">
+                    <label for="name" id="name-label">* Name:</label>
+                    <input type="text" name="fullname" placeholder="Enter your name" required id="name">
+                </div>
+                <div class="input-row">
+                    <label for="email" id="email-label">* Email:</label>
+                    <input type="email" name="email" placeholder="Enter your email address" required id="email">
+                </div>
+                <div class="input-row">
+                    <label for="number" id="number-label">* Age:</label>
+                    <input type="number" name="age" placeholder="Enter your age" required id="number" min="5" max="99">
+                </div>
+                <div class="input-row">
+                    <div>Which option best describes your current role?:</div>
+                    <select type="" name="role" id="dropdown">
+                        <option disabled selected value="">Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>                        
+                    </select>
+                </div>
+                <div class="input-row">
+                    <div>* How likely is that you would recommend<br>freeCodeCamp to a friend?</div> 
+                    <ul style="list-style: none;"> 
+                        <li>
+                            <input type="radio" name="radio-recommend" value="definitely" checked id="radio-definitely">
+                            <label for="radio-definitely">Definitely</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-recommend" value="maybe" id="radio-maybe">
+                            <label for="radio-maybe">Maybe</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-recommend" value="notsure" id="radio-notSure">
+                            <label for="radio-notSure">Not sure</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="input-row">
+                        <div>What do you like most in FCC:</div>
+                        <select type="" name="likemost" id="likemost">
+                            <option disabled selected value="">Select an option</option>
+                            <option value="challenges">challenges</option>
+                            <option value="projects">Projects</option>
+                            <option value="community">Community</option>
+                            <option value="openSource">Open Source</option>
+                            <option value="other">Other</option>                        
+                        </select>
+                    </div>
+                    <div class="input-row">
+                        <div>Things that should be improved in the future<br>(Check all that apply):</div> 
+                        <ul style="list-style: none;"> 
+                            <li>
+                                <input type="checkbox" name="things-improve" value="frontend" id="checkbox-frontend">
+                                <label for="checkbox-frontend">Front-end Projects</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="things-improve" value="backend" id="checkbox-backend">
+                                <label for="checkbox-backend">Back-end Projects</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="things-improve" value="datavis" id="checkbox-datavis">
+                                <label for="checkbox-datavis">Data Visualization</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="things-improve" value="challenges" id="checkbox-challenges">
+                                <label for="checkbox-challenges">Challenges</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="things-improve" value="openSource" id="checkbox-openSource">
+                                <label for="checkbox-openSource">Open Source Community</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="things-improve" value="gitterHelp" id="checkbox-gitterHelp">
+                                <label for="checkbox-gitterHelp">Gitter Help Rooms</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="things-improve" value="videos" id="checkbox-videos">
+                                <label for="checkbox-videos">Videos</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="things-improve" value="meetups" id="checkbox-meetups">
+                                <label for="checkbox-meetups">City Meetups</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="things-improve" value="wiki" id="checkbox-wiki">
+                                <label for="checkbox-wiki">Wiki</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="things-improve" value="forum" id="checkbox-" id="checkbox-forum">
+                                <label for="checkbox-forum">Forum</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="things-improve" value="additional" id="checkbox-additional">
+                                <label for="checkbox-additional">Additional Courses</label>
+                            </li>                           
+                                
+
+                        </ul>
+                    </div>
+                    <div class="input-row">
+                        <div>Any Comments or Suggestions?</div>
+                        <textarea name="fullname" placeholder="Enter your comment here..."></textarea>
+                    </div>
+                    <div class="submit-btn">
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+            </form>
+        </main>
+
+        <footer id="contact">
+            <div class="content-wrap">
+                <h2>Let's Keep in Touch!</h2>
+        
+                <!-- Social media and contact links. Add or remove any networks. -->
+                <div class="contact-info">
+                    <a href="mailto:baber.arjumand@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/baberarjumand/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/baberarjumand" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+        
+                <p>&copy Copyright 2019 by Baber Arjumand</p>
+            </div>
+            </footer>
+
+        <!-- Place JS scripts at end -->
+        <script src="js/scripts.js"></script>
+        <script src="https://kit.fontawesome.com/2a4df8165e.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+    
+</html>
