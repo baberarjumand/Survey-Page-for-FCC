@@ -20,19 +20,19 @@
             <p id="description">Let us know how we can improve freeCodeCamp</p>
             <form action="" id="survey-form">
                 <div class="input-row">
-                    <label for="name" id="name-label">* Name:</label>
+                    <label for="name" id="name-label" class="inputlabel">* Name:</label>
                     <input type="text" name="fullname" placeholder="Enter your name" required id="name">
                 </div>
                 <div class="input-row">
-                    <label for="email" id="email-label">* Email:</label>
+                    <label for="email" id="email-label" class="inputlabel">* Email:</label>
                     <input type="email" name="email" placeholder="Enter your email address" required id="email">
                 </div>
                 <div class="input-row">
-                    <label for="number" id="number-label">* Age:</label>
+                    <label for="number" id="number-label" class="inputlabel">* Age:</label>
                     <input type="number" name="age" placeholder="Enter your age" required id="number" min="5" max="99">
                 </div>
                 <div class="input-row">
-                    <div>Which option best describes your current role?:</div>
+                    <div class="inputlabel">Which option best describes your current role?:</div>
                     <select type="" name="role" id="dropdown">
                         <option disabled selected value="">Select an option</option>
                         <option value="student">Student</option>
@@ -43,7 +43,7 @@
                     </select>
                 </div>
                 <div class="input-row">
-                    <div>* How likely is that you would recommend<br>freeCodeCamp to a friend?</div> 
+                    <div>* How likely is that you would recommend freeCodeCamp to a friend?</div> 
                     <ul style="list-style: none;"> 
                         <li>
                             <input type="radio" name="radio-recommend" value="definitely" checked id="radio-definitely">
@@ -60,69 +60,67 @@
                     </ul>
                 </div>
                 <div class="input-row">
-                        <div>What do you like most in FCC:</div>
-                        <select type="" name="likemost" id="likemost">
-                            <option disabled selected value="">Select an option</option>
-                            <option value="challenges">challenges</option>
-                            <option value="projects">Projects</option>
-                            <option value="community">Community</option>
-                            <option value="openSource">Open Source</option>
-                            <option value="other">Other</option>                        
-                        </select>
-                    </div>
+                    <div class="inputlabel">What do you like most in FCC:</div>
+                    <select type="" name="likemost" id="likemost">
+                        <option disabled selected value="">Select an option</option>
+                        <option value="challenges">challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="openSource">Open Source</option>
+                        <option value="other">Other</option>                        
+                    </select>
+                </div>
+                <div class="input-row">
+                    <div>Things that should be improved in the future<br>(Check all that apply):</div> 
+                    <ul style="list-style: none;"> 
+                        <li>
+                            <input type="checkbox" name="things-improve" value="frontend" id="checkbox-frontend">
+                            <label for="checkbox-frontend">Front-end Projects</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="things-improve" value="backend" id="checkbox-backend">
+                            <label for="checkbox-backend">Back-end Projects</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="things-improve" value="datavis" id="checkbox-datavis">
+                            <label for="checkbox-datavis">Data Visualization</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="things-improve" value="challenges" id="checkbox-challenges">
+                            <label for="checkbox-challenges">Challenges</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="things-improve" value="openSource" id="checkbox-openSource">
+                            <label for="checkbox-openSource">Open Source Community</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="things-improve" value="gitterHelp" id="checkbox-gitterHelp">
+                            <label for="checkbox-gitterHelp">Gitter Help Rooms</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="things-improve" value="videos" id="checkbox-videos">
+                            <label for="checkbox-videos">Videos</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="things-improve" value="meetups" id="checkbox-meetups">
+                            <label for="checkbox-meetups">City Meetups</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="things-improve" value="wiki" id="checkbox-wiki">
+                            <label for="checkbox-wiki">Wiki</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="things-improve" value="forum" id="checkbox-" id="checkbox-forum">
+                            <label for="checkbox-forum">Forum</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="things-improve" value="additional" id="checkbox-additional">
+                            <label for="checkbox-additional">Additional Courses</label>
+                        </li>   
+                    </ul>
+                </div>
                     <div class="input-row">
-                        <div>Things that should be improved in the future<br>(Check all that apply):</div> 
-                        <ul style="list-style: none;"> 
-                            <li>
-                                <input type="checkbox" name="things-improve" value="frontend" id="checkbox-frontend">
-                                <label for="checkbox-frontend">Front-end Projects</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="things-improve" value="backend" id="checkbox-backend">
-                                <label for="checkbox-backend">Back-end Projects</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="things-improve" value="datavis" id="checkbox-datavis">
-                                <label for="checkbox-datavis">Data Visualization</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="things-improve" value="challenges" id="checkbox-challenges">
-                                <label for="checkbox-challenges">Challenges</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="things-improve" value="openSource" id="checkbox-openSource">
-                                <label for="checkbox-openSource">Open Source Community</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="things-improve" value="gitterHelp" id="checkbox-gitterHelp">
-                                <label for="checkbox-gitterHelp">Gitter Help Rooms</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="things-improve" value="videos" id="checkbox-videos">
-                                <label for="checkbox-videos">Videos</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="things-improve" value="meetups" id="checkbox-meetups">
-                                <label for="checkbox-meetups">City Meetups</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="things-improve" value="wiki" id="checkbox-wiki">
-                                <label for="checkbox-wiki">Wiki</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="things-improve" value="forum" id="checkbox-" id="checkbox-forum">
-                                <label for="checkbox-forum">Forum</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="things-improve" value="additional" id="checkbox-additional">
-                                <label for="checkbox-additional">Additional Courses</label>
-                            </li>                           
-                                
-
-                        </ul>
-                    </div>
-                    <div class="input-row">
-                        <div>Any Comments or Suggestions?</div>
+                        <div class="inputlabel">Any Comments or Suggestions?</div>
                         <textarea name="fullname" placeholder="Enter your comment here..."></textarea>
                     </div>
                     <div class="submit-btn">

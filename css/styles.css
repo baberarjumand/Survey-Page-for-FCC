@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    margin: 0 25vw;
+    margin: 0 10vw;
 }
 
 /* Header and Footer styles
@@ -90,62 +90,14 @@ main p:first-of-type {
 }
 
 .input-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'label input-field';
-    padding-bottom: 15px;
-    /* height: 10px; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10%;
 }
 
-.input-row label {
-    grid-area: label;    
-    justify-self: end;
-}
-
-.input-row div {
-    grid-area: label;    
-    /* width: 100%; */
-    /* text-align: end;     */
-    justify-self: end;
-}
-
-.input-row input {
-    grid-area: input-field;
-    justify-self: start;
-    margin-left: 15px;
+#name, #email, #number, .inputlabel {
     padding: 5px;
-    width: 300px;
-    /* border-radius: 1px; */
-}
-
-.input-row select {
-    grid-area: input-field;
-    justify-self: start;
-    margin-left: 15px;
-    /* border-radius: 1px; */
-}
-
-.input-row ul {
-    margin: 0;
-    padding: 0;
-}
-
-.input-row ul input {
-    width: 10px;    
-}
-
-/* .input-row ul li {
-    position: relative;
-    display: block;
-} */
-
-textarea {
-    grid-area: input-field;
-    justify-self: start;
-    margin-left: 15px;
-    padding: 5px;
-    width: 300px;
-    height: 55px;
 }
 
 .submit-btn {
